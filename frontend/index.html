@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Transcribing Tool</title>
+    <!-- Import Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #transcribedText{
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Preview Video</h2>
+                <video id="videoPreview" controls class="w-100"></video>
+                <h2 class="mt-4">Upload Video</h2>
+                <input type="file" id="videoUpload" class="form-control" />
+                <button id="transcribeButton" type="button" class="btn btn-primary mt-2">Transcribe</button>
+            </div>
+            <div class="col-lg-6">
+                <h2>Transcribed Text</h2>
+                <div id="transcribedText" class="border border-primary h-100"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        
+    </script>
+</body>
+</html>
