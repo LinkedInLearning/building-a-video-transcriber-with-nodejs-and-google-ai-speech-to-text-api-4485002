@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "my-video-transcribing-project",
+  "private_key_id": "48b3e7da18b01b651ecd45ef8b712f620f3e2229",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQD2dVWkb1SvYHdY\n5VxW8+oLmbjKvQfWQgSRSQHNnuxem4BYvv9TsqaTiLe2NntlgnbsuKmS8euc/W+g\nElEWhJqenJzEWCkW7GCkZAhWOZc1CyBMJZn5xQXCGlzLyjViBb2srmRC7KwdiH/m\nK2sUvBqAeR/EUXpAg4JG7RZAp8X2u1tB6oR48WgtVhKX/0Y/oaW0TA5uda2mpt8o\npoqYGJgMVYbcsJq0Rj5WmdQJU1HvErdK1EofIGN7lYZ3tarvprQVJNkoETmW9jLM\nURsedSO0OXuvvY3vNzHAZZW3NNCBzdq+cb3XeaXLOVgK21LUMb98AWAbsxhRsces\nqqkRVINlAgMBAAECggEAScllQ57FRuBluuqoU6whBSoXxjMD9qS7Q1gNPyd2cvix\nW2CLht50urTy842qMgD2Y/cBZeoh9VV3JwB04H4A4L3YvXv7iU5pvK3qRQ5m882J\n9OJJEBtpluxXnffDNb6sQ9fOUq8S9KCaUinrnECY2p/o39jY9hmpVlzDDcZtIWnu\nBloAnyhPS31Iy2dJbcgvIp8N3gi1R8D7MGfPdcVMTHAvBJ70jJEkxoIUqh2TrS2L\nRdpMPPGP4jboU6X3lUskv5g0PK9IPyuqWsoEwBjZsDzc8FHcwVsVoP0alJUbQEUj\nNMIa7a2cON2y85m9iAXuto9TSw4Vw358XJeaJlrg/QKBgQD9TxjyFhkAqtcklQ82\nxrqVMGQA9FfE5H0rDguiIv2PYT/TL1fAonvBXDUDUHnveZOsD20NzXIl1eX45dQm\nnou7AayTt+UGwGz5gmp6D1cfBmUXrFLPxyi8GFpOKSUuSpIDEj/bBFZ/GJ681KZH\npZA52FaPw1W5zj4sqk71g11oXwKBgQD5E5sjmZD9qPpGUb32EYIbI2S9IYS+VfjD\nmViXNGT4wQzPjHE4zHmXPyrvfCMeB4Sl95oybRUbiBWTTaqFC0eyx+nw6BHvdMYv\nzCI1eE8yNndcjEWpWzeBpVjF0TTOs7MMh0RgySLW3lAv65tpIBpyhMiuUCCBk7Ew\nvQaO9SR6uwKBgEOHFZBb4bhy0r3W2uJwYgcpik9S1B8SBmg261UC3POfKkOjSFJ7\nPmCSszM5/fegQoTI6/qU/Uwm1JLgugi9lWR6EsaibHS7UZHGeZomgsQrkUGZV846\nOprCJzjU8SuBB6G3+LvrUR+6sX6Hdfh9o5A4IwNaQH0zBRIlKL18kqcjAoGAOn2O\nKvf/AnJSA31inIxT/0d6eqeKYqARwO0bzrYxF/FNrteOJwZtb0UYMhD2tjCRx9+z\nSDAxiruURXkxl/ikJ6mmmDoHLDJB8CuBxQixoFsGAKe4HCMdj8ZiaGHOgtPUMhb5\nybiyA79FGVu8rR0q2MWx0q1iVMt4Crf4+E08+c0CgYEAg9ONYtzVfSnY3O0XGoHy\n513aDfK5XIERNeaNfY0CghMa9PNbukwjshr6yPlkIpgBVoIOk+BDaejOw0/s8sZv\n2FvYF3UV1NybG7EZIzeHrzIsANGAKhN3qIlHJuPpXfGdC/11hGCKU8o2wMdCsJCS\nrnSGaU+d/A2qlhCsttRmcUQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-project-service-account@my-video-transcribing-project.iam.gserviceaccount.com",
+  "client_id": "114068376085546438349",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-project-service-account%40my-video-transcribing-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -9,6 +9,10 @@
         #transcribedText{
             overflow: scroll;
         }
+
+        #transcriptionProgressBar{
+            visibility: hidden
+        }
     </style>
 </head>
 <body>
@@ -19,11 +23,17 @@
                 <video id="videoPreview" controls class="w-100"></video>
                 <h2 class="mt-4">Upload Video</h2>
                 <input type="file" id="videoUpload" class="form-control" />
+
+                <div class="progress" id="transcriptionProgressBar">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%"></div>
+                </div>
+
                 <button id="transcribeButton" type="button" class="btn btn-primary mt-2">Transcribe</button>
             </div>
             <div class="col-lg-6">
                 <h2>Transcribed Text</h2>
-                <div id="transcribedText" class="border border-primary h-100"></div>
+                <!--<div id="transcribedText" class="border border-primary h-100"></div>-->
+                <textarea id="transcribedText" cols="60" rows="30"></textarea>
             </div>
         </div>
     </div>
@@ -33,7 +43,65 @@
 
     <!-- Custom JavaScript -->
     <script>
-        
+        const videoUpload = document.getElementById("videoUpload");
+        const videoPreview = document.getElementById("videoPreview");
+        const transcribeButton = document.getElementById("transcribeButton");
+        const transcribedText = document.getElementById("transcribedText");
+
+        const transcriptionProgressBar = document.getElementById("transcriptionProgressBar")
+
+        let selectedFile;
+
+        videoUpload.addEventListener("change", function(e){
+
+            if(e.target.files && e.target.files.length > 0){
+
+                selectedFile = e.target.files[0];
+                let selectedVideo = URL.createObjectURL(selectedFile);
+
+                videoPreview.src = selectedVideo;
+            }
+        })
+
+        async function transcribeVideo(){
+
+            let formData = new FormData();
+
+            formData.append("file", selectedFile)
+
+            transcriptionProgressBar.style.visibility = "visible";
+
+            try {
+
+                let response = await axios.post("http://localhost:1330/transcribe", formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                })
+
+                if(response.data){
+                    displayTranscription(response);
+                }
+
+                transcriptionProgressBar.style.visibility = "hidden";
+
+            }catch (e){
+                console.log(error);
+
+                transcriptionProgressBar.style.visibility = "hidden";
+
+                alert("Video Transcription Failed");
+
+            }
+        }
+
+        transcribeButton.addEventListener("click", transcribeVideo);
+
+        function displayTranscription(response){
+
+            transcribedText.value = response.data.text;
+
+        }
     </script>
 </body>
 </html>
