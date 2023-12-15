@@ -1,7 +1,13 @@
 # Building a Video Transcriber with Node.js and Google AI Speech-To-Text API
 This is the repository for the LinkedIn Learning course `Building a Video Transcriber with Node.js and Google AI Speech-To-Text API`. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
+![course-name-alt-text][lil-thumbnail-url] 
+
+Formerly complicated tasks like audio transcription for videos have become much simpler thanks to the rise of APIs like Google's Speech-to-Text. But while this exciting new tool can handle transcription, if you want to transcribe a lot of audio, your code still needs to set up connections and authentication and pipe the information back and forth. In this course, instructor Fikayo Adepoju shows you how to integrate Node.js applications with Google AI Speech-to-Text. Learn how to set up Google AI Speech-to-Text, build the video transcriber interface, develop the back end and connect to the AI, and then bring it all together.
+
+This course is designed for intermediate and advanced developers interested in the future of development with generative AI and the integration of applications with AI models.
+
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -20,15 +26,21 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
 
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+### Instructor
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+Fikayo Adepoju
+
+_Technical Writer | Software Developer_
+                            
+
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/fikayo-adepoju).
+
+
+[lil-course-url]: https://www.linkedin.com/learning/building-a-video-transcriber-with-node-js-and-google-ai-speech-to-text-api/
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4D0DAQE-HeK__tSoEA/learning-public-crop_675_1200/0/1702508337928?e=2147483647&v=beta&t=Fc1lRp592X_600JyxwN8Xw-4fRjYSXAKLcJ9hPjIeSY
 
